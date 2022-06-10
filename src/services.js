@@ -26,7 +26,6 @@ export const otpLogin = ({ email, otp }) => {
   return new Promise((resolve, reject) => {
     webAuth.passwordlessLogin(
       { email, connection: "email", verificationCode: otp },
-      
       (err) => {
         if (err) {
           reject(err);
