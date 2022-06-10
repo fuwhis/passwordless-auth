@@ -29,11 +29,11 @@ const Home = () => {
           fontFamily="'Oswald', sans-serif"
           marginBottom="1.2rem"
         >
-          Welcome to Kutz Luxury
+          Welcome to Single Page App
         </Heading>
         <Text opacity="0.7" marginBottom="3.5rem" fontSize="1.125rem">
           We offer various haircuts and beard trimming of all sorts. You are in
-          good hands. Kutz Luxury is the prime spot for your hair grooming needs
+          good hands. SPA is the prime spot for your hair grooming needs
           in your city.
         </Text>
         <Link

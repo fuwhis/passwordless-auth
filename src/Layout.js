@@ -34,7 +34,7 @@ const Header = () => {
       padding="0 1.2rem"
     >
       <Link as={RouterLink} to="/" _hover={{ textDecoration: "none" }}>
-        <Image size="2.5rem" src={logo} alt="logo" />
+        <Image size="3.5rem" src={logo} alt="logo" />
       </Link>
       <Flex align="center">
         <ThemeSwitcher />

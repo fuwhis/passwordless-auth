@@ -150,7 +150,7 @@ const Auth = () => {
               _hover={{ textDecoration: "none" }}
               _focus={{ boxShadow: "none" }}
             >
-              <Image size="5rem" src={logo} alt="logo" />
+              <Image size="6rem" src={logo} alt="logo" />
             </Link>
           </Text>
           <form style={{ marginTop: "2rem" }} onSubmit={onSubmit}>

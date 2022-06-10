@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 import Loader from "../Loader";
 import { logout, webAuth } from "../services";
 import { StoreContext } from "../store";
-
+// react-hooks/exhausting-deps 
 const Authorize = () => {
   const {
     authenticateUser,
@@ -29,7 +29,7 @@ const Authorize = () => {
     }
   };
 
-  useEffect(parseAuthToken, []);
+  useEffect(parseAuthToken, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (isAuthenticated) {
     return <Redirect to="/dashboard" />;

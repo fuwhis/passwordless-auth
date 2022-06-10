@@ -10,11 +10,13 @@ export const webAuth = new auth0.WebAuth({
 export const otpStart = ({ email }) => {
   return new Promise((resolve, reject) => {
     const variables = { email, connection: "email", send: "code" };
+    console.log('variables', variables)
     webAuth.passwordlessStart(variables, (err, res) => {
       if (err) {
         reject(err);
       } else {
         resolve(res);
+        console.log('res', res)
       }
     });
   });
@@ -24,6 +26,7 @@ export const otpLogin = ({ email, otp }) => {
   return new Promise((resolve, reject) => {
     webAuth.passwordlessLogin(
       { email, connection: "email", verificationCode: otp },
+      
       (err) => {
         if (err) {
           reject(err);
