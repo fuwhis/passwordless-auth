@@ -8,14 +8,14 @@ import {
   Button,
   Box,
   Link,
-  Image,
+  // Image,
 } from "@chakra-ui/core";
 import { Link as RouterLink } from "react-router-dom";
 
 import ThemeSwitcher from "./ThemeSwitcher";
 import { StoreContext } from "./store";
 import { logout } from "./services";
-import logo from "./logo.png";
+// import logo from "./logo.png";
 
 const Header = () => {
   const { isAuthenticated, resetAuth } = useContext(StoreContext);
@@ -34,7 +34,7 @@ const Header = () => {
       padding="0 1.2rem"
     >
       <Link as={RouterLink} to="/" _hover={{ textDecoration: "none" }}>
-        <Image size="3.5rem" src={logo} alt="logo" />
+        {/* <Image size="3.5rem" src={logo} alt="logo" /> */}
       </Link>
       <Flex align="center">
         <ThemeSwitcher />

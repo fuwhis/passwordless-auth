@@ -14,9 +14,10 @@ export const otpStart = ({ email }) => {
     webAuth.passwordlessStart(variables, (err, res) => {
       if (err) {
         reject(err);
+        console.log('err', err)
       } else {
         resolve(res);
-        console.log('res', res)
+        console.log('otpStart res: ', res)
       }
     });
   });
